@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MYCalculyator </title>
+    <link rel="stylesheet" href="MYcalculator.css">
+</head>
+
+<body>
+    <div class="clock">
+        <!-- clock -->
+        <div id="hour"> 00 </div> <!-- hour -->
+        <span> : </span>
+        <div id="minute"> 00 </div> <!-- minute -->
+        <span> : </span>
+        <div id="seconds"> 00 </div> <!-- second -->
+    </div>
+    <!---->
+    <script src="Time.js"> </script> <!-- JavaScript code for clock -->
+
+    <form action="#" name="web_dasturchi">
+        <!-- calculator -->
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="display" disabled placeholder="0"> <!-- display -->
+                </td>
+            </tr>
+            <tr class="kk">
+                <!-- B U T T O N S -->
+                <td>
+                    <input type="button" name="seven" value="7" onclick="web_dasturchi.display.value +='7'">
+                </td>
+                <td>
+                    <input type="button" name="eight" value="8" onclick="web_dasturchi.display.value +='8'">
+                </td>
+                <td>
+                    <input type="button" name="nine" value="9" onclick="web_dasturchi.display.value +='9'">
+                </td>
+                <td>
+                    <input type="button" name="div" class="operator" value="/"
+                        onclick="web_dasturchi.display.value +='/'">
+                </td>
+            </tr>
+            <tr class="kk">
+                <td>
+                    <input type="button" name="four" value="4" onclick="web_dasturchi.display.value +='4'">
+                </td>
+                <td>
+                    <input type="button" name="five" value="5" onclick="web_dasturchi.display.value +='5'">
+                </td>
+                <td>
+                    <input type="button" name="six" value="6" onclick="web_dasturchi.display.value +='6'">
+                </td>
+                <td>
+                    <input type="button" name="times" class="operator" value="x"
+                        onclick="web_dasturchi.display.value +='*'">
+                </td>
+            </tr>
+            <tr class="kk">
+                <td>
+                    <input type="button" name="one" value="1" onclick="web_dasturchi.display.value +='1'">
+                </td>
+                <td>
+                    <input type="button" name="two" value="2" onclick="web_dasturchi.display.value +='2'">
+                </td>
+                <td>
+                    <input type="button" name="three" value="3" onclick="web_dasturchi.display.value +='3'">
+                </td>
+                <td>
+                    <input type="button" name="minus" class="operator" value="-"
+                        onclick="web_dasturchi.display.value +='-'">
+                </td>
+            </tr>
+            <tr class="kk">
+                <td>
+                    <input type="button" name="clear" value="C" onclick="web_dasturchi.display.value =''">
+                </td>
+                <td>
+                    <input type="button" name="zero" value="0" onclick="web_dasturchi.display.value +='0'">
+                </td>
+                <td>
+                    <input type="button" name="doit" value="="
+                        onclick="web_dasturchi.display.value =eval(web_dasturchi.display.value)">
+                </td>
+                <td>
+                    <input type="button" name="plus" class="operator" value="+"
+                        onclick="web_dasturchi.display.value +='+'">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <section>
+        <div class="banner">
+            <div class="animate">
+                <div class="text1"> Abdulaziz Soliyev </div>
+                <div class="text2"> Programmer </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
